@@ -33,3 +33,23 @@ void PrintArray(string[] array)
     Console.Write("]");
     Console.WriteLine();
 }  
+
+string[] OutArray(string[] array, int min)  
+{  
+    int count = 0;  
+    foreach (var item in array)  
+    {  
+        if (item.Length <= min) count++;
+    }  
+    string[] result = new string[count]; 
+    count = 0;
+    foreach (var item in array)   
+    {  
+        if (item.Length <= min)
+        {
+            result[count] = item;
+            count++;
+        }        
+    }   
+    return result; 
+}   
