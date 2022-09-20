@@ -53,3 +53,14 @@ string[] OutArray(string[] array, int min)
     }   
     return result; 
 }   
+
+int numberOfElements = CheckNumbers("Введите количество элементов в массиве");  
+string[] array = InputArray(new string[numberOfElements]);   
+Console.WriteLine();  
+Console.WriteLine("Ваш введенный массив:");
+PrintArray(array);  
+Console.WriteLine();
+int minSymbolsAmount = CheckNumbers("Введите минимальное число символов в слове"); 
+Console.WriteLine();  
+Console.WriteLine("Конечный массив:");
+PrintArray(OutArray(array, minSymbolsAmount)); 
