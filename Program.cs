@@ -10,3 +10,14 @@
         else return number;
     }
 }
+
+string[] InputArray(string[] array)  
+{    
+    Console.WriteLine(); 
+    for (int i = 0; i < array.Length; i++)  
+    {  
+        Console.Write($"Введите {i + 1}-й элемент массива: ");  
+        array[i] = Console.ReadLine()!;  
+    }  
+    return array;
+} 
